@@ -9,7 +9,7 @@ public class Main {
 
         if(A > B) {
             System.out.print(A - B);
-        }else if(A < B){
+        }else {
             System.out.print(B - A);
         }
     }
