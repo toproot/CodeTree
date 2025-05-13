@@ -14,8 +14,9 @@ public class Main {
                 break;
             }
 
-            intA = intA / intB;
             int iRest = intA % intB;
+            intA = intA / intB;
+            
             iArr[iRest] += 1;
         }
 
