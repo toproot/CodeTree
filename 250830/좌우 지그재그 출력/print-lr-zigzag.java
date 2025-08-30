@@ -21,7 +21,7 @@ public class Main {
                     System.out.print(iFlagNo + " ");
                 }
             }
-            iFlagNo += 4;
+            iFlagNo += N;
             System.out.println();
         }
     }
