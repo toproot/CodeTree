@@ -17,6 +17,7 @@ public class Main {
             int iNum = Integer.parseInt(st.nextToken());
 
             if(iNum > maxValue) {
+                secondMaxValue = maxValue;
                 maxValue = iNum;
 
             }else if (iNum <= maxValue && iNum >= secondMaxValue) {
