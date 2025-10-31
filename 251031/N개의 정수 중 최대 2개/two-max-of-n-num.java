@@ -20,7 +20,7 @@ public class Main {
                 secondMaxValue = maxValue;
                 maxValue = iNum;
 
-            }else if (iNum < maxValue && iNum > secondMaxValue) {
+            }else if (iNum <= maxValue && iNum >= secondMaxValue) {
                 secondMaxValue = iNum;
             }
         }
