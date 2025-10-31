@@ -16,6 +16,11 @@ public class Main {
         for(int i = 0; i < N; i++) {
             int iNum = Integer.parseInt(st.nextToken());
 
+            if(i == 0) {
+            	maxValue = iNum;
+            	continue;
+            }
+            
             if(iNum > maxValue) {
                 secondMaxValue = maxValue;
                 maxValue = iNum;
