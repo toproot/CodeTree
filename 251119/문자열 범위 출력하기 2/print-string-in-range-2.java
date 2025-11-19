@@ -7,10 +7,16 @@ public class Main {
 
         String str = sc.next();
         int N = sc.nextInt();
-        int strLength = str.length()-1;
+        int strLength = str.length();
 
-        for (int i = strLength; i > strLength - N; i--) {
-            System.out.print(str.charAt(i));
+        if(N > strLength) {
+            for(int i = strLength-1; i >= 0; i--) {
+                System.out.print(str.charAt(i));
+            }
+        }else {
+            for(int i =strLength-1; i >= (strLength - N); i--) {
+                System.out.print(str.charAt(i));
+            }
         }
     }
 }
