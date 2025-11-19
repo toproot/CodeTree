@@ -17,16 +17,17 @@ public class Main {
             }else {
                 if(chrSub == chr) {
                     cnt++;
-                    if(i == str.length()-1) {
-                        cnt++;
-                        result += (chr + Integer.toString(cnt));
-                    }
                 }else {
                     cnt++;
                     result += (chr + Integer.toString(cnt));
 
                     chr = chrSub;
                     cnt = 0;
+                }
+
+                if(i == str.length()-1) {
+                    cnt++;
+                    result += (chr + Integer.toString(cnt));
                 }
             }
         }
