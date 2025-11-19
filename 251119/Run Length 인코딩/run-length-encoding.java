@@ -14,21 +14,20 @@ public class Main {
 
             if (i==0) {
                 chr = chrSub;
+                cnt++;
             }else {
                 if(chrSub == chr) {
                     cnt++;
                 }else {
-                    cnt++;
                     result += (chr + Integer.toString(cnt));
 
                     chr = chrSub;
-                    cnt = 0;
+                    cnt = 1;
                 }
+            }
 
-                if(i == str.length()-1) {
-                    cnt++;
-                    result += (chr + Integer.toString(cnt));
-                }
+            if(i == str.length()-1) {
+                result += (chr + Integer.toString(cnt));
             }
         }
         System.out.println(result.length());
