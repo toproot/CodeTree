@@ -14,7 +14,7 @@ public class Main {
 
             int i = sc.nextInt();
 
-            if (i > str.length()) {
+            if (i >= str.length()) {
                 str = str.substring(0, str.length()-1);
             }else {
                 str = str.substring(0, i) + str.substring(i+1);
