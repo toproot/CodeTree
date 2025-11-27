@@ -17,12 +17,12 @@ public class Main {
             }else if (M == 3) {
 
                 char[] cList = sResult.toCharArray();
-                String str = "";
+                StringBuilder sb = new StringBuilder();
                 for(int j = cList.length -1; j >= 0; j--) {
-                    str += cList[j] + "";
+                    sb.append(cList[j] + "");
                 }
 
-                sResult = str;
+                sResult = sb.toString();
             }
 
             System.out.println(sResult);
