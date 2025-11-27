@@ -16,9 +16,10 @@ public class Main {
                 sResult = sResult.substring(sResult.length()-1, sResult.length()) + sResult.substring(0, sResult.length()-1);
             }else if (M == 3) {
 
+                char[] cList = sResult.toCharArray();
                 String str = "";
-                for(int j = sResult.length()-1; j >= 0; j--) {
-                    str += sResult.substring(j, j+1);
+                for(int j = cList.length -1; j >= 0; j--) {
+                    str += cList[j] + "";
                 }
 
                 sResult = str;
