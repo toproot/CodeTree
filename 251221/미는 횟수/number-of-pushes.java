@@ -11,7 +11,7 @@ public class Main {
 
         for (int i = 0 ; i < A.length(); i++) {
             cnt++;
-            String subA = A.substring(1) + A.substring(0, 1);
+            String subA = A.substring(A.length()-1, A.length()) + A.substring(0, A.length()-1);
             if (subA.equals(B)) {
                 System.out.print(cnt);
                 bResult = true;
