@@ -12,11 +12,11 @@ public class Main {
 
     public static int checkMin(int a, int b, int c) {
         int iMin = 0;
-        if(a < b && a < c) {
+        if(a <= b && a <= c) {
             iMin = a;
-        }else if (b < a && b < c) {
+        }else if (b <= a && b <= c) {
             iMin = b;
-        }else if (c < a && c < b) {
+        }else if (c <= a && c <= b) {
             iMin = c;
         }
         return iMin;
