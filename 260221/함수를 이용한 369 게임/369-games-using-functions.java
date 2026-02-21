@@ -32,20 +32,19 @@ public class Main {
         while(i > 0) {
 
             if (i / 10 == 0) {
-                i = i % 10;
                 if(isThreeNumber(i)) {
                     bReturn = true;
                 }
                 break;
             }else {
-                int j = i / 10;
+                int j = i % 10;
                 if(isThreeNumber(j)) {
                     bReturn = true;
                     break;
                 }
             }
 
-            i = i % 10;
+            i = i / 10;
         }
 
         return bReturn;
@@ -57,7 +56,7 @@ public class Main {
         for(int i = 0; i < iList.length; i++) {
             if (j == iList[i]) {
                 bReturn = true;
-                break;
+                ;
             }
         }
 
